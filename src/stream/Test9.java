@@ -30,7 +30,7 @@ public class Test9 {
 //        System.out.println(min);
 //        Student max = students.stream().max((x,y)-> x.getAge()-y.getAge()).get();
 //        System.out.println(max);
-//
+
 //        students.stream().filter(e -> e.getAge() > 20). forEach(System.out::println);
 //        System.out.println("==========================================");
 //        students.stream().filter(e -> e.getAge() > 20).limit(2).forEach(System.out::println);
@@ -39,6 +39,7 @@ public class Test9 {
 
         int sum = students.stream().mapToInt(el->el.getCourse()).sum();
         System.out.println(sum);
+
         Double avg = students.stream().mapToInt(el->el.getCourse())
                 .average().getAsDouble();
         System.out.println(avg);

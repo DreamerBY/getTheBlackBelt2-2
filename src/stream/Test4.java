@@ -15,6 +15,10 @@ public class Test4 {
 
        int result = list.stream().reduce((accumulator, element) ->
                accumulator*element).get();
+
+       //5, 8, 2, 4, 3
+        //accumulator = 5 40 80 320 960
+        //element = 8  2 4 3
        // System.out.println(result);
 
 

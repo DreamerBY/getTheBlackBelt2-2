@@ -1,5 +1,5 @@
 package l2_comparable;//
-package l2_comparable;//
+
 
 import java.util.*;
 

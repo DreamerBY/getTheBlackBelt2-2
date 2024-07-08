@@ -14,6 +14,8 @@ public class Test7 {
 
         Faculty f1 = new Faculty("Economics");
         Faculty f2 = new Faculty("Appplied mathmatics");
+
+
         f1.addStudentToFaculty(st1);
         f1.addStudentToFaculty(st2);
         f1.addStudentToFaculty(st3);
@@ -23,11 +25,12 @@ public class Test7 {
         List<Faculty> facultyList = new ArrayList<>();
         facultyList.add(f1);
         facultyList.add(f2);
-        facultyList.stream().flatMap(faculty -> faculty.getStudentsOnFaculty().stream())
+
+        facultyList.stream()
+                .flatMap(faculty -> faculty.getStudentsOnFaculty().stream())
                 .forEach(e -> System.out.println(e.getName()) );
 
-
-    }
+        }
 
 }
 class Faculty{
@@ -37,8 +40,6 @@ class Faculty{
     public Faculty(String name) {
         this.name = name;
         studentsOnFaculty = new ArrayList<>();
-
-
     }
 
     public List<Student> getStudentsOnFaculty() {

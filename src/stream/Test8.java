@@ -21,12 +21,11 @@ public class Test8 {
         students.add(st4);
         students.add(st5);
 
-//       Map<Integer, List<Student>> map = students.stream().map(el -> {
+//       Map <Integer, List<Student>> map = students.stream().map(el -> {
 //            el.setName(el.getName().toUpperCase());
 //            return el;
 //        })
 //                .collect(Collectors.groupingBy(el -> el.getCourse()));
-//
 //       for (Map.Entry<Integer, List<Student>> entry: map.entrySet ()) {
 //           System.out.println(entry.getKey()+": "+entry.getValue().toString());
 //       }
@@ -37,6 +36,8 @@ public class Test8 {
         for (Map.Entry<Boolean, List<Student>> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue().toString());
         }
+
+
 
 
     }

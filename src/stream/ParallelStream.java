@@ -17,6 +17,10 @@ public class ParallelStream {
         list.add(1.0);
         list.add(0.25);
 
+//        double sumResult = list.stream()
+//                .reduce((accumulator, element) -> accumulator + element).get();
+//        System.out.println("sum result = " + sumResult);
+//
 //        double sumResult = list.parallelStream()
 //                .reduce((accumulator, element) -> accumulator + element).get();
 //        System.out.println("sum result = " + sumResult);
